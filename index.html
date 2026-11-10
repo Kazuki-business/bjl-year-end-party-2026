@@ -217,13 +217,13 @@
         <a href="#overview" class="hover:text-brinks-700 transition-colors">Overview</a>
         <a href="#schedule" class="hover:text-brinks-700 transition-colors">Schedule</a>
         <a href="#venues" class="hover:text-brinks-700 transition-colors">Venues</a>
-        <a href="#rsvp" class="text-brinks-700 hover:text-brinks-900 transition-colors flex items-center gap-1 font-bold">
-          <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-gold-600"></i> 出欠回答
+        <a href="https://brinksco-my.sharepoint.com/personal/kazuki_ohno_brinks_com/_layouts/15/listforms.aspx?cid=MTZhM2UwODQtNWY5ZS00ZTNmLTk0NmUtY2QwMzE5YTM3YWZl&nav=ZTcxNThkYjktZDNlYS00M2U0LWIwYzctNjM3MmUyM2Q4ZDE0" target="_blank" rel="noopener noreferrer" class="text-brinks-700 hover:text-brinks-900 transition-colors flex items-center gap-1 font-bold">
+          <i data-lucide="external-link" class="w-3.5 h-3.5 text-gold-600"></i> 出欠回答
         </a>
       </nav>
 
       <div class="flex items-center space-x-2 sm:space-x-3">
-        <a href="#rsvp" class="px-3 sm:px-4 py-1.5 sm:py-2 rounded bg-brinks-700 hover:bg-brinks-800 text-white font-ui-accent font-semibold text-xs tracking-wider uppercase shadow-md hover:shadow-lg transition-all flex items-center gap-1.5">
+        <a href="https://brinksco-my.sharepoint.com/personal/kazuki_ohno_brinks_com/_layouts/15/listforms.aspx?cid=MTZhM2UwODQtNWY5ZS00ZTNmLTk0NmUtY2QwMzE5YTM3YWZl&nav=ZTcxNThkYjktZDNlYS00M2U0LWIwYzctNjM3MmUyM2Q4ZDE0" target="_blank" rel="noopener noreferrer" class="px-3 sm:px-4 py-1.5 sm:py-2 rounded bg-brinks-700 hover:bg-brinks-800 text-white font-ui-accent font-semibold text-xs tracking-wider uppercase shadow-md hover:shadow-lg transition-all flex items-center gap-1.5">
           <i data-lucide="mail-check" class="w-3.5 h-3.5"></i>
           出欠回答
         </a>
@@ -274,14 +274,16 @@
           <div class="h-px w-12 sm:w-20 bg-gradient-to-l from-transparent to-gold-400"></div>
         </div>
 
-        <!-- Highlighted Date & Time -->
+        <!-- Highlighted Date & Time (Responsive 1-line on PC, 2-lines on Mobile without Bullet) -->
         <div class="bg-gradient-to-r from-brinks-50/70 via-white to-brinks-50/70 border border-brinks-100 rounded p-3 sm:p-4 mb-6 sm:mb-8">
           <p class="font-ui-accent text-base sm:text-xl tracking-[0.1em] sm:tracking-[0.15em] text-brinks-900 font-bold mb-1">
             SATURDAY, DECEMBER 19, 2026
           </p>
-          <p class="text-xs sm:text-sm text-slate-600 tracking-wide">
-            1次会 12:30～14:30（アレグリア銀座）<br class="sm:hidden"> &bull; 2次会 15:00～17:30（バグース銀座）
-          </p>
+          <div class="text-xs sm:text-sm text-slate-600 tracking-wide flex flex-col sm:flex-row items-center justify-center sm:gap-2">
+            <span>1次会 12:30～14:30（アレグリア銀座）</span>
+            <span class="hidden sm:inline text-slate-400">&bull;</span>
+            <span class="mt-1 sm:mt-0">2次会 15:00～17:30（バグース銀座）</span>
+          </div>
         </div>
 
         <!-- COUNTDOWN TIMER (Dec 19, 2026 12:30 JST) -->
@@ -316,16 +318,12 @@
           <span>回答期限：<strong class="underline decoration-amber-400 font-bold">11月17日（火） 18:00まで</strong></span>
         </div>
 
-        <!-- Action Buttons -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-          <a href="#rsvp" class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded bg-brinks-700 hover:bg-brinks-800 text-white font-ui-accent font-bold text-xs tracking-wider uppercase shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
-            <i data-lucide="check-square" class="w-4 h-4"></i>
-            出欠フォームで回答する
+        <!-- Single Primary Action Button (Direct Form Link) -->
+        <div class="flex justify-center">
+          <a href="https://brinksco-my.sharepoint.com/personal/kazuki_ohno_brinks_com/_layouts/15/listforms.aspx?cid=MTZhM2UwODQtNWY5ZS00ZTNmLTk0NmUtY2QwMzE5YTM3YWZl&nav=ZTcxNThkYjktZDNlYS00M2U0LWIwYzctNjM3MmUyM2Q4ZDE0" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 sm:px-12 py-3.5 sm:py-4 rounded bg-brinks-700 hover:bg-brinks-800 text-white font-ui-accent font-bold text-xs sm:text-sm tracking-wider uppercase shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all flex items-center justify-center gap-2.5">
+            <i data-lucide="external-link" class="w-4 h-4 text-gold-300"></i>
+            出欠確認フォームを開く（回答する）
           </a>
-          <button id="add-to-cal-btn" class="w-full sm:w-auto px-5 sm:px-6 py-3 sm:py-3.5 rounded border border-slate-300 hover:border-brinks-500 text-slate-700 hover:text-brinks-700 font-ui-accent text-xs font-semibold tracking-wider uppercase transition-colors bg-white flex items-center justify-center gap-2 shadow-sm">
-            <i data-lucide="calendar-plus" class="w-4 h-4 text-gold-600"></i>
-            カレンダーに追加
-          </button>
         </div>
 
       </div>
@@ -609,7 +607,7 @@
               出欠確認および2次会（バグース銀座）の参加希望について、社内アカウントより下記ボタンからご入力いただけます。
             </p>
 
-            <a id="form-link-btn" href="https://brinksco-my.sharepoint.com/personal/kazuki_ohno_brinks_com/_layouts/15/listforms.aspx?cid=MTZhM2UwODQtNWY5ZS00ZTNmLTk0NmUtY2QwMzE5YTM3YWZl&nav=ZTcxNThkYjktZDNlYS00M2U0LWIwYzctNjM3MmUyM2Q4ZDE0" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3.5 sm:py-4 rounded bg-gradient-to-r from-brinks-700 via-brinks-600 to-brinks-800 text-white font-ui-accent font-bold text-xs sm:text-sm tracking-wider uppercase shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all">
+            <a id="form-link-btn" href="https://brinksco-my.sharepoint.com/personal/kazuki_ohno_brinks_com/_layouts/15/listforms.aspx?cid=MTZhM2UwODQtNWY5ZS00ZTNmLTk0NmUtY2QwMzE5YTM3YWZl&nav=ZTcxNThkYjktZDNlYS00M2U0LWIwYzctNjM3MmUyM2Q4ZDE0" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-10 py-3.5 sm:py-4 rounded bg-gradient-to-r from-brinks-700 via-brinks-600 to-brinks-800 text-white font-ui-accent font-bold text-xs sm:text-sm tracking-wider uppercase shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all">
               <i data-lucide="external-link" class="w-4 h-4 sm:w-5 sm:h-5"></i>
               出欠確認フォームを開く
             </a>
@@ -619,46 +617,6 @@
               <button id="copy-url-btn" class="text-xs text-slate-500 hover:text-brinks-700 font-ui-accent flex items-center gap-1 transition-colors underline">
                 <i data-lucide="copy" class="w-3.5 h-3.5"></i> フォームのURLをコピーする
               </button>
-            </div>
-          </div>
-
-          <!-- Secondary In-Page Note / Confirmation -->
-          <div class="pt-6 border-t border-slate-200">
-            <p class="text-[11px] sm:text-xs text-slate-500 mb-3 sm:mb-4">
-              ※回答内容の手元メモとして下記簡易チェックもご利用いただけます。
-            </p>
-            <button id="toggle-sim-btn" class="text-xs text-brinks-700 hover:text-brinks-800 font-ui-accent font-semibold underline">
-              簡易メモ入力フォームを表示する
-            </button>
-
-            <div id="sim-form-container" class="hidden mt-4 sm:mt-6 text-left bg-slate-50 p-4 sm:p-6 rounded border border-slate-200">
-              <form id="rsvp-sim-form" class="space-y-3 sm:space-y-4 text-xs">
-                <div>
-                  <label for="sim-name" class="block font-semibold text-slate-700 mb-1">お名前</label>
-                  <input type="text" id="sim-name" placeholder="例：山田 太郎" class="w-full bg-white border border-slate-300 rounded px-3 py-2 text-xs sm:text-sm focus:border-brinks-500 focus:outline-none">
-                </div>
-                <div>
-                  <label class="block font-semibold text-slate-700 mb-1">ご出欠</label>
-                  <div class="space-y-1.5">
-                    <label class="flex items-center gap-2 cursor-pointer">
-                      <input type="radio" name="sim-attend" value="1次会・2次会両方出席" checked class="text-brinks-700">
-                      <span>1次会・2次会両方出席</span>
-                    </label>
-                    <label class="flex items-center gap-2 cursor-pointer">
-                      <input type="radio" name="sim-attend" value="1次会のみ出席" class="text-brinks-700">
-                      <span>1次会のみ出席</span>
-                    </label>
-                    <label class="flex items-center gap-2 cursor-pointer">
-                      <input type="radio" name="sim-attend" value="欠席" class="text-brinks-700">
-                      <span>残念ながら欠席</span>
-                    </label>
-                  </div>
-                </div>
-                <button type="submit" class="w-full py-2.5 bg-brinks-700 text-white rounded font-bold hover:bg-brinks-800 transition-colors font-ui-accent">
-                  メモとして手元に保存する
-                </button>
-              </form>
-              <div id="sim-status" class="hidden mt-3 p-3 bg-emerald-50 border border-emerald-200 text-emerald-800 rounded text-center text-xs"></div>
             </div>
           </div>
 
@@ -753,19 +711,7 @@
     updateCountdown();
     setInterval(updateCountdown, 1000);
 
-    // 4. Add to Calendar (Target: 2026-12-19)
-    const calBtn = document.getElementById('add-to-cal-btn');
-    if (calBtn) {
-      calBtn.addEventListener('click', function() {
-        const title = encodeURIComponent("Brink's Japan Year-End Gala 2026");
-        const details = encodeURIComponent('1次会: アレグリア銀座 (12:30-14:30)\n2次会: バグース銀座 (15:00-17:30)\n回答期限: 11月17日(火) 18:00\nお問い合わせ: 大野 (Kazuki.ohno@brinks.com)');
-        const location = encodeURIComponent('東京都中央区銀座2-13-19 アレグリア銀座');
-        const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=20261219T033000Z/20261219T083000Z&details=${details}&location=${location}`;
-        window.open(gcalUrl, '_blank');
-      });
-    }
-
-    // 5. Copy Form URL
+    // 4. Copy Form URL
     const copyUrlBtn = document.getElementById('copy-url-btn');
     if (copyUrlBtn) {
       copyUrlBtn.addEventListener('click', function() {
@@ -798,28 +744,6 @@
         copyUrlBtn.innerHTML = '<i data-lucide="copy" class="w-3.5 h-3.5"></i> フォームのURLをコピーする';
         lucide.createIcons();
       }, 2500);
-    }
-
-    // 6. Toggle Simulator Form & Storage
-    const toggleSimBtn = document.getElementById('toggle-sim-btn');
-    const simContainer = document.getElementById('sim-form-container');
-    const simForm = document.getElementById('rsvp-sim-form');
-    const simStatus = document.getElementById('sim-status');
-
-    if (toggleSimBtn && simContainer) {
-      toggleSimBtn.addEventListener('click', function() {
-        simContainer.classList.toggle('hidden');
-      });
-    }
-
-    if (simForm) {
-      simForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const name = document.getElementById('sim-name').value.trim() || 'メンバー';
-        const attend = document.querySelector('input[name="sim-attend"]:checked')?.value || '出席';
-        simStatus.textContent = `${name} 様：${attend} として手元メモを保存しました。※本回答は上記の「出欠確認フォームを開く」ボタンより送信してください。`;
-        simStatus.classList.remove('hidden');
-      });
     }
   </script>
 </body>
